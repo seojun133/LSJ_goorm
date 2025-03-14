@@ -15,6 +15,6 @@ i=1
 for i in range(N):
 	i += 1
 	sum = 1
-	sum += sum * i 
+	sum = sum * i 
 	
 print(sum)
