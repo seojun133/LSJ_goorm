@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 데이터 로드
+
 df = pd.read_csv('/Users/goorm/Documents/GitHub/LSJ_goorm/fitness_user_data/fitness_user_data.csv')
 
 print("기본 정보 확인")
@@ -42,6 +42,7 @@ plt.plot(df['exercise_time'], df['calories_burned'], 'o', alpha=0.7)
 plt.title('운동 시간과 소모 칼로리 관계', fontsize=16)
 plt.xlabel('운동 시간(분)', fontsize=12)
 plt.ylabel('소모 칼로리', fontsize=12)
+plt.grid(True)
 plt.tight_layout()
 plt.show()
 
@@ -55,6 +56,7 @@ plt.xticks(range(len(exercise_types)), exercise_types)
 plt.title('운동 유형과 소모 칼로리 관계', fontsize=16)
 plt.xlabel('운동 유형', fontsize=12)
 plt.ylabel('소모 칼로리', fontsize=12)
+plt.grid(True)
 plt.tight_layout()
 plt.show()
 
@@ -64,5 +66,7 @@ plt.plot(df['exercise_time'], df['weight'], 'o', alpha=0.7)
 plt.title('운동 시간과 몸무게 관계', fontsize=16)
 plt.xlabel('운동 시간(분)', fontsize=12)
 plt.ylabel('몸무게 (kg)', fontsize=12)
+plt.grid(True)
 plt.tight_layout()
 plt.show()
+
